@@ -49,6 +49,39 @@ body {
 	transform: translateY(-50%);
 }
 
+.btn:hover,
+.btn:focus {
+	background-color: #114455;
+	color: #fff;
+}
+
+.btn:active {
+	top: 1px;
+}
+
+.btn:hover::after {
+	background-image: url('./../img/icons/arrow-right-white.svg');
+}
+
+.btn--big {
+	padding: 14px 32px;
+	padding-right: 80px;
+}
+
+.btn--dark {
+	background-color: #114455;
+	color: #fff;
+}
+
+.btn--dark:hover,
+.btn--dark:focus {
+	background-color: #000;
+}
+
+.btn--dark::after {
+	background-image: url('./../img/icons/arrow-right-white.svg');
+}
+
 
 /* Header */
 .header {
