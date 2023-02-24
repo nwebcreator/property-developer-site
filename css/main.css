@@ -75,8 +75,22 @@ body {
 
 .btn--dark:hover,
 .btn--dark:focus {
-	background-color: #000;
+	background-color: #e5f0f4;
+	color: #114455;
+
 }
+
+.btn--dark:hover::after ,
+.btn--dark:focus::after  {
+    content: '';
+	position: absolute;
+    background-image: url('./../img/icons/arrow-right-black.svg');
+	background-repeat: no-repeat;
+    background-position: center;
+    right: 24px;
+	top: 50%;
+}
+
 
 .btn--dark::after {
 	background-image: url('./../img/icons/arrow-right-white.svg');
