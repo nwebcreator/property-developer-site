@@ -17,6 +17,18 @@ body {
 	margin: 0 auto;
 }
 
+.container-right {
+	overflow-x: hidden;
+	padding-left: calc((100% - 1750px) / 2 + 15px);
+}
+
+@media (max-width: 1749px) {
+	.container-right {
+		padding-left: 15px;
+		overflow-x: hidden;
+	}
+}
+
 /* Button */
 .btn {
     position: relative;
@@ -139,6 +151,15 @@ body {
 	color: #114455;
 }
 
+.link:active {
+	top: 1px;
+}
+
+.link:hover,
+.link:focus {
+    border-bottom: 1px solid #114455;
+}
+
 /* Header content */
 
 
@@ -164,4 +185,54 @@ body {
 
 .header__text p + p {
 	margin-top: 1em;
+}
+
+/* Case Studies */
+
+.case-studies {
+	padding: 184px 0;
+}
+
+.case-studies__title {
+	max-width: 1070px;
+	margin-bottom: 12px;
+}
+
+.case-studies__text {
+	max-width: 1070px;
+	margin-bottom: 100px;
+}
+
+.title {
+	font-size: 80px;
+	font-weight: 800;
+	color: #1f1f1f;
+}
+
+.text {
+	font-size: 28px;
+	line-height: 1.57; /* 44px or 44px/28px=1.57 in case of changing the font size*/
+	color: #1f1f1f;
+}
+
+/* Slider */
+
+.slide {
+	position: relative;
+	display: inline-block;
+	padding-left: 80px;
+}
+
+.slide__title {
+	position: absolute;
+	left: 0;
+	bottom: 104px;
+
+	font-size: 140px;
+	font-weight: 800;
+
+	background: linear-gradient(90deg, rgba(17, 68, 85, 1) 80px, rgba(255, 255, 255, 1) 80px);
+
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
