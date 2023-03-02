@@ -284,7 +284,6 @@ body {
 .video__picture {
 	position: relative;
 	z-index: 7;
-	/* display: none; */
 }
 
 .video__object {
@@ -295,4 +294,40 @@ body {
 	width: 100%;
 	height: 100%;
 	vertical-align: top;
+}
+
+/* Footer */
+
+.footer {
+	padding: 162px 0 82px;
+
+	letter-spacing: 0.04em;
+	font-size: 20px;
+	line-height: 36px;
+	color: rgba(31, 31, 31, 0.7);
+}
+
+.footer a {
+	letter-spacing: 0.04em;
+	font-size: 20px;
+	line-height: 36px;
+	color: rgba(31, 31, 31, 0.7);
+}
+
+.footer__row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__nav {
+	display: flex;
+	column-gap: 104px;
+}
+
+.footer__email {
+}
+
+.footer__socials {
+	display: flex;
+	column-gap: 26px;
 }
